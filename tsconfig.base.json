@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@domain/data-sync": ["libs/domain/data-sync/src/index.ts"],
+      "@domain/feature-funds": ["libs/domain/feature-funds/src/index.ts"],
+      "@domain/user": ["libs/domain/user/src/index.ts"],
+      "@shared/helpers": ["libs/shared/helpers/src/index.ts"],
+      "@shared/util-types": ["libs/shared/util-types/src/index.ts"]
+    },
+    "types": ["jest", "node"]
+  },
+  "exclude": ["node_modules", "tmp"]
+}
